@@ -1,3 +1,7 @@
+"use strict";
+
+alert("hello");
+
 document.addEventListener("DOMContentLoaded", () => {
   //Mobile Menu
   const burger = document.querySelector(".burger"); //наша кнопка
