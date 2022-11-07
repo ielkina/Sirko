@@ -1,0 +1,68 @@
+/*--------------------------------------SERVICE---------------------------*/
+.service__items {
+  // position: relative;
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+  // align-items: center
+  // justify-content: space-between;
+  // max-width: 330px;
+  // width: 1000%;
+  // position: relative;
+}
+
+.service__item {
+  // position: absolute;
+  max-width: 330px;
+  // width: 100%;
+  // height: 229px;
+}
+
+.service__item:not(:last-child) {
+  // margin-right: 90px;
+}
+
+.service__title {
+  padding-top: 84px;
+  position: relative;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.service__text span,
+.service__title span {
+  text-transform: uppercase;
+}
+
+.service__text {
+  font-size: 16px;
+}
+
+
+.service__title::before {
+  content: "";
+  position: absolute;
+  // background-size: 19%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+  border: 0;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.service__title--code::before {
+  background-image: url(../img/svg/code-icon.svg);
+}
+
+.service__title--dev::before {
+  background-image: url(../img/svg/dev-icon.svg);
+}
+
+.service__title--chat::before {
+  background-image: url(../img/svg/chat-icon.svg);
+}
